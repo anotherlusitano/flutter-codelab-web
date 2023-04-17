@@ -132,7 +132,8 @@ class _SignUpFormState extends State<SignUpForm> {
                     : Colors.blue;
               }),
             ),
-            onPressed: _showWelcomeScreen,
+            onPressed:
+                _formProgress == 1 ? _showWelcomeScreen : null, // UPDATED
             child: const Text('Sign up'),
           ),
         ],
