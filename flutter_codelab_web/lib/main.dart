@@ -35,6 +35,20 @@ class SignUpScreen extends StatelessWidget {
   }
 }
 
+class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child:
+            Text('Welcome!', style: Theme.of(context).textTheme.displayMedium),
+      ),
+    );
+  }
+}
+
 class SignUpForm extends StatefulWidget {
   const SignUpForm();
 
